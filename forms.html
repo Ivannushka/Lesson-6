@@ -4,35 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forms</title>
 </head>
 <body>
-    <form action="">
+    <form action="" method="POST">
         <div>
             <label for="name-input-field">Name:</label>
-            <input type="text"id="name-input-field" value="Some Name">
+            <input type="text" id="name-input-field" value="Some Name" disabled>
         </div>
+        <label for="name-input-field">Name:</label>
+        <input type="text" id="name-input-field" value="Some Name" name="name"readonly>
+    </div>
+    <div>
+    <label for="name-input-field">Name:</label>
+    <input type="text" id="name-input-field" value="Some Name">
+</div>
+<div>
+    <label for="name-input-field">Name:</label>
+    <input type="date" id="name-input-field" value="Some Name">
+</div>
         <div>
             <label for="password-input-field">Password:</label>
-            <input type="password"id="password-input-field" value="foo">
+            <input type="password" id="password-input-field" value="foo" placeholder="Password:"> 
         </div>
         <div>
-            <input type="checkbox" name="" id="agree-checkbox">
+            <input type="hidden" name="checkbox" value="0">
+            <input type="checkbox" name="" id="agree-checkbox" value="1">
             <label for="agree-checkbox">Agree with terms and conditions </label>
             
         </div>
         <div>
-            <input type="checkbox" name="" id="newsletter-checkbox" checked>
+            <input type="checkbox" name="" id="newsletter-checkbox"  name="checkbox" checked>
             <label for="anewsletter-checkbox">Get the newsletter </label>
             
         </div>
         <h5>Gender</h5>
         <div>
-            <input type="radio" name="" id="gender-female">
+            <input type="radio" name="gender" id="gender-female" value="female">
             <label for="gender-female">Female</label>
         </div>
         <div>
-            <input type="radio" name="" id="gender-male">
+            <input type="radio" name="" id="gender-male" value="male">
             <label for="gender-male">Male</label>
         </div>
         <div>
@@ -43,6 +55,48 @@
             <input type="radio" name="" id="gender-idk" checked>
             <label for="gender-idk">IDK</label>
         </div>
+        <div>
+            <input type="radio" name="gender" id="gender-not-gonatell-ya">
+            <label for="gender-not-gonatell-ya">Not gonna tel ya</label>
+        </div>
+        <div>
+            <label for="contry-select">Country:</label>
+            <select id="country-select" name="coutry">
+                <option> Select one...</option>
+                <optgroup label="Baltics">
+                    <option selected>Latvia</option>
+                    <option>Lithuania</option>
+                         <option>Estonia</option>
+                </optgroup>
+<optgroup label="Other">   <option >Zimbabve</option>
+    <option> Narnia</option>
+</optgroup>             
+            </select>
+            <dv>
+           <label for="comment-text"><Comment:</label>
+           <textarea name="" id="" cols="30" rows="10">
+               text    text   text   text   textv
+               text   text   text   text
+               text   text   text   text   text
+           </textarea>
+            </div>
+            <div>
+            <input type="submit" value="whatever">
+            <button>
+                <em>Foo</em> Bar
+            </button>
+            <input type="Submit">
+
+            </div>
+       
     </form>
 </body>
 </html>
+
+<!--some note for myself-->
+<!-- 
+kebab-case
+snake_case
+camelCase
+PascalCase 
+-->
